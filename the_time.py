@@ -1,0 +1,9 @@
+h,m=map(int,input().split(":"))
+ad=int(input())
+ad=ad+m+h*60
+ad=ad%(24*60)
+h=ad//60
+m=ad%60
+if(h==24):
+    h=0
+print(f"{h:02d}:{m:02d}")
